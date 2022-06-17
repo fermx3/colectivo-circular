@@ -1,0 +1,72 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-cfd200: #CFD200;
+    --unnamed-color-1c4525: #1C4525;
+    --unnamed-color-1a5632: #1A5632;
+    
+    /* Font/text values */
+    --unnamed-font-family-acumin-pro: Acumin Pro;
+    --unnamed-font-family-acumin-pro-wide: Acumin Pro Wide;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-60: 60px;
+    --unnamed-font-size-150: 150px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-26: 26px;
+    --unnamed-line-spacing-84: 84px;
+    --unnamed-line-spacing-210: 210px;
+    --unnamed-text-transform-uppercase: uppercase;
+
+    font-family: Acumin Pro;
+    }
+    
+    /* Character Styles */
+    .description {
+    font-family: var(--unnamed-font-family-acumin-pro);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1c4525);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-acumin-pro-wide);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-60);
+    line-height: var(--unnamed-line-spacing-84);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1a5632);
+    }
+    .unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-acumin-pro-wide);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-60);
+    line-height: var(--unnamed-line-spacing-84);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-cfd200);
+    }
+    .header {
+    font-family: var(--unnamed-font-family-acumin-pro);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-cfd200);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+ /*    .section {
+    font-family: var(--unnamed-font-family-acumin-pro);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-150);
+    line-height: var(--unnamed-line-spacing-210);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-cfd200);
+    } */
