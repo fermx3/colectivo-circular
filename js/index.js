@@ -53,20 +53,17 @@ $(document).ready(function () {
 
     $('.card-content').click(function () {
         $('.modal').css('display', 'block');
-    });
 
-    //Display titles and content of blog posts
-
-    $(".card-content").click(function () {
+        //Display titles and content of blog posts
         const title = document.querySelector("#post-title");
         const content = document.querySelector("#post-content");
 
-        if (document.querySelector("#page-title").innerText == "BLOG") {
+        if (document.querySelector(".work")) {
             title.innerHTML = $(this.children)[1].innerHTML;
             content.innerHTML = $(this.children)[2].innerHTML;
         }
 
-        if (document.querySelector("#page-title").innerText == "INICIATIVA") {
+        if (document.querySelector(".events")) {
             title.innerHTML = $(this.children)[0].innerHTML;
             content.innerHTML = $(this.children)[1].innerHTML;
         }
