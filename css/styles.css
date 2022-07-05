@@ -271,7 +271,7 @@ nav .item a{
 }
 
 .modal .content{
-    
+    overflow: auto;
 }
 
 
