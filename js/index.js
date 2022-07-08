@@ -69,4 +69,9 @@ $(document).ready(function () {
         }
     });
 
+    //Footer
+	
+	const thisYear = new Date().getFullYear();
+	$('footer').html('<p>© COLECTIVO CIRCULAR BY U.S. MEAT. ' +  thisYear + '</p>');
+
 });
