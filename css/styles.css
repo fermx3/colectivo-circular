@@ -1010,7 +1010,7 @@ footer{
     background-color: #F41938;
     position: fixed;
     bottom: 23vh;
-    left: 5.5%; 
+    left: 4%; 
 }
 
 .btn-link:hover {
@@ -1031,6 +1031,12 @@ footer{
     .large-text-purpose{
        /*  font: normal normal normal 50px/60px Acumin Pro; */
     }
+
+    .btn-link {
+        bottom: 23vh;
+        left: 5.5%; 
+    }
+
 }
 
 @media (max-width: 1024px) {
