@@ -1,7 +1,9 @@
 const express = require("express");
-const app = express();
+const ejs = require('ejs');
+
 const port = 8000;
 
+const app = express();
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
