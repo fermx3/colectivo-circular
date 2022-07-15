@@ -1,3 +1,12 @@
+function toLink(urlRaw) {
+    const urlNormal = urlRaw.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+    const urlLowerCase = urlNormal.toLowerCase();
+    const urlNoSymbols = urlLowerCase.replace(/[^\w\s]/gi, '');
+    const url = urlNoSymbols.split(' ').join('-');
+
+    return url;
+}
+
 $(document).ready(function () {
 
     //window.location.href = 'index.html'
@@ -56,11 +65,7 @@ $(document).ready(function () {
 
         // Activate links to blogposts
         if (document.querySelector(".work")) {
-            const urlRaw = $(this.children)[1].innerText;
-            const urlNormal = urlRaw.normalize("NFD").replace(/\p{Diacritic}/gu, "");
-            const urlLowerCase = urlNormal.toLowerCase();
-            const urlNoSymbols = urlLowerCase.replace(/[^\w\s]/gi, '');
-            const url = urlNoSymbols.split(' ').join('-');
+            const url = toLink($(this.children)[1].innerText);
 
             window.location = `https://colectivocircular.com/blog/${url}`;
         }
@@ -80,6 +85,43 @@ $(document).ready(function () {
             content.innerHTML = $(this.children)[1].innerHTML;
         }
     });
+
+    //Fetch Blog data
+    // const pageTitle = document.querySelector("#page-title").innerText;
+    // let url = '';
+
+    // if(pageTitle == "BLOG") {
+    //     url = 'https://public-api.wordpress.com/rest/v1.1/sites/colectivocircular.com::blog/posts/?category=colectivo-circular';
+    // } else if(pageTitle == 'INICIATIVA') {
+    //     url = ''
+    // } else {
+    //     url = 'https://public-api.wordpress.com/rest/v1.1/sites/colectivocircular.com::blog/posts/?category=' + toLink(pageTitle);
+    // }
+
+    //  // Make a request to the REST API
+    //  const loadPosts = async () => {
+    //     const url = getApiUrl(api);
+    //     const request = await fetch(url);
+    //     const posts = await request.json();
+
+    //     // Builds the HTML to show the posts
+    //     const postsHtml = renderPostHtml(posts);
+
+    //     // Adds the HTML into the posts div
+    //     postsContent.innerHTML += postsHtml;
+
+    //     // Required for the infinite scroll
+    //     postsLoaded = true;
+    //   };
+
+    // fetch(url).then(function(response){
+    //     return response.json();
+    // }).then(function(posts){
+    //     var postList = URL.createObjectURL(posts);
+    // });
+
+    // console.log(postList);
+   
 
     //Footer
 	

@@ -138,7 +138,7 @@ section.section .header{
     
 }
 
-section.section .header .title{
+section.section .header .title, section.section .header .title > a{
     text-align: center;
     letter-spacing: 0px;
     transform: rotate(-90deg);
